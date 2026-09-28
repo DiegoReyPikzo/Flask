@@ -1,0 +1,3002 @@
+{
+    "MAC": {
+        "Name": "R1",
+        "Protocolos": [
+            "OSPF",
+            "STP",
+            "IEGRP"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    8080
+                ],
+                "Policies": "Voice",
+                "ET": true,
+                "IP": "192.168.10.68",
+                "SSH": true
+            }
+        },
+        "Status": "Activo"
+    },
+    "AA:BB:CC:00:00:01": {
+        "Name": "R2",
+        "Protocolos": [
+            "RIP",
+            "STP"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    80,
+                    443
+                ],
+                "Policies": "Data",
+                "ET": false,
+                "IP": "192.168.20.3",
+                "SSH": false
+            },
+            "VL2": {
+                "Ports": [
+                    22,
+                    8080
+                ],
+                "Policies": "Video",
+                "ET": true,
+                "IP": "192.168.21.3",
+                "SSH": false
+            }
+        },
+        "Status": "Inactivo"
+    },
+    "AA:BB:CC:00:00:02": {
+        "Name": "R3",
+        "Protocolos": [
+            "BGP",
+            "OSPF",
+            "STP"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    22,
+                    8080
+                ],
+                "Policies": "Video",
+                "ET": true,
+                "IP": "192.168.20.4",
+                "SSH": true
+            },
+            "VL2": {
+                "Ports": [
+                    5000
+                ],
+                "Policies": "Management",
+                "ET": false,
+                "IP": "192.168.21.4",
+                "SSH": true
+            },
+            "VL3": {
+                "Ports": [
+                    443,
+                    8443
+                ],
+                "Policies": "Guest",
+                "ET": true,
+                "IP": "192.168.22.4",
+                "SSH": true
+            }
+        },
+        "Status": "Activo"
+    },
+    "AA:BB:CC:00:00:03": {
+        "Name": "R4",
+        "Protocolos": [
+            "EIGRP",
+            "STP"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    5000
+                ],
+                "Policies": "Management",
+                "ET": false,
+                "IP": "192.168.20.5",
+                "SSH": false
+            }
+        },
+        "Status": "Inactivo"
+    },
+    "AA:BB:CC:00:00:04": {
+        "Name": "R5",
+        "Protocolos": [
+            "OSPF",
+            "STP",
+            "VRRP"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    443,
+                    8443
+                ],
+                "Policies": "Guest",
+                "ET": true,
+                "IP": "192.168.20.6",
+                "SSH": true
+            },
+            "VL2": {
+                "Ports": [
+                    8080
+                ],
+                "Policies": "Voice",
+                "ET": false,
+                "IP": "192.168.21.6",
+                "SSH": true
+            }
+        },
+        "Status": "Activo"
+    },
+    "AA:BB:CC:00:00:05": {
+        "Name": "R6",
+        "Protocolos": [
+            "OSPF",
+            "STP",
+            "IEGRP"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    8080
+                ],
+                "Policies": "Voice",
+                "ET": false,
+                "IP": "192.168.20.7",
+                "SSH": false
+            },
+            "VL2": {
+                "Ports": [
+                    80,
+                    443
+                ],
+                "Policies": "Data",
+                "ET": true,
+                "IP": "192.168.21.7",
+                "SSH": false
+            },
+            "VL3": {
+                "Ports": [
+                    22,
+                    8080
+                ],
+                "Policies": "Video",
+                "ET": false,
+                "IP": "192.168.22.7",
+                "SSH": false
+            }
+        },
+        "Status": "Inactivo"
+    },
+    "AA:BB:CC:00:00:06": {
+        "Name": "R7",
+        "Protocolos": [
+            "RIP",
+            "STP"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    80,
+                    443
+                ],
+                "Policies": "Data",
+                "ET": true,
+                "IP": "192.168.20.8",
+                "SSH": true
+            }
+        },
+        "Status": "Activo"
+    },
+    "AA:BB:CC:00:00:07": {
+        "Name": "R8",
+        "Protocolos": [
+            "BGP",
+            "OSPF",
+            "STP"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    22,
+                    8080
+                ],
+                "Policies": "Video",
+                "ET": false,
+                "IP": "192.168.20.9",
+                "SSH": false
+            },
+            "VL2": {
+                "Ports": [
+                    5000
+                ],
+                "Policies": "Management",
+                "ET": true,
+                "IP": "192.168.21.9",
+                "SSH": false
+            }
+        },
+        "Status": "Inactivo"
+    },
+    "AA:BB:CC:00:00:08": {
+        "Name": "R9",
+        "Protocolos": [
+            "EIGRP",
+            "STP"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    5000
+                ],
+                "Policies": "Management",
+                "ET": true,
+                "IP": "192.168.20.10",
+                "SSH": true
+            },
+            "VL2": {
+                "Ports": [
+                    443,
+                    8443
+                ],
+                "Policies": "Guest",
+                "ET": false,
+                "IP": "192.168.21.10",
+                "SSH": true
+            },
+            "VL3": {
+                "Ports": [
+                    8080
+                ],
+                "Policies": "Voice",
+                "ET": true,
+                "IP": "192.168.22.10",
+                "SSH": true
+            }
+        },
+        "Status": "Activo"
+    },
+    "AA:BB:CC:00:00:09": {
+        "Name": "R10",
+        "Protocolos": [
+            "OSPF",
+            "STP",
+            "VRRP"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    443,
+                    8443
+                ],
+                "Policies": "Guest",
+                "ET": false,
+                "IP": "192.168.20.11",
+                "SSH": false
+            }
+        },
+        "Status": "Inactivo"
+    },
+    "AA:BB:CC:00:00:0A": {
+        "Name": "R11",
+        "Protocolos": [
+            "OSPF",
+            "STP",
+            "IEGRP"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    8080
+                ],
+                "Policies": "Voice",
+                "ET": true,
+                "IP": "192.168.20.12",
+                "SSH": true
+            },
+            "VL2": {
+                "Ports": [
+                    80,
+                    443
+                ],
+                "Policies": "Data",
+                "ET": false,
+                "IP": "192.168.21.12",
+                "SSH": true
+            }
+        },
+        "Status": "Activo"
+    },
+    "AA:BB:CC:00:00:0B": {
+        "Name": "R12",
+        "Protocolos": [
+            "RIP",
+            "STP"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    80,
+                    443
+                ],
+                "Policies": "Data",
+                "ET": false,
+                "IP": "192.168.20.13",
+                "SSH": false
+            },
+            "VL2": {
+                "Ports": [
+                    22,
+                    8080
+                ],
+                "Policies": "Video",
+                "ET": true,
+                "IP": "192.168.21.13",
+                "SSH": false
+            },
+            "VL3": {
+                "Ports": [
+                    5000
+                ],
+                "Policies": "Management",
+                "ET": false,
+                "IP": "192.168.22.13",
+                "SSH": false
+            }
+        },
+        "Status": "Inactivo"
+    },
+    "AA:BB:CC:00:00:0C": {
+        "Name": "R13",
+        "Protocolos": [
+            "BGP",
+            "OSPF",
+            "STP"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    22,
+                    8080
+                ],
+                "Policies": "Video",
+                "ET": true,
+                "IP": "192.168.20.14",
+                "SSH": true
+            }
+        },
+        "Status": "Activo"
+    },
+    "AA:BB:CC:00:00:0D": {
+        "Name": "R14",
+        "Protocolos": [
+            "EIGRP",
+            "STP"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    5000
+                ],
+                "Policies": "Management",
+                "ET": false,
+                "IP": "192.168.20.15",
+                "SSH": false
+            },
+            "VL2": {
+                "Ports": [
+                    443,
+                    8443
+                ],
+                "Policies": "Guest",
+                "ET": true,
+                "IP": "192.168.21.15",
+                "SSH": false
+            }
+        },
+        "Status": "Inactivo"
+    },
+    "AA:BB:CC:00:00:0E": {
+        "Name": "R15",
+        "Protocolos": [
+            "OSPF",
+            "STP",
+            "VRRP"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    443,
+                    8443
+                ],
+                "Policies": "Guest",
+                "ET": true,
+                "IP": "192.168.20.16",
+                "SSH": true
+            },
+            "VL2": {
+                "Ports": [
+                    8080
+                ],
+                "Policies": "Voice",
+                "ET": false,
+                "IP": "192.168.21.16",
+                "SSH": true
+            },
+            "VL3": {
+                "Ports": [
+                    80,
+                    443
+                ],
+                "Policies": "Data",
+                "ET": true,
+                "IP": "192.168.22.16",
+                "SSH": true
+            }
+        },
+        "Status": "Activo"
+    },
+    "AA:BB:CC:00:00:0F": {
+        "Name": "R16",
+        "Protocolos": [
+            "OSPF",
+            "STP",
+            "IEGRP"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    8080
+                ],
+                "Policies": "Voice",
+                "ET": false,
+                "IP": "192.168.20.17",
+                "SSH": false
+            }
+        },
+        "Status": "Inactivo"
+    },
+    "AA:BB:CC:00:00:10": {
+        "Name": "R17",
+        "Protocolos": [
+            "RIP",
+            "STP"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    80,
+                    443
+                ],
+                "Policies": "Data",
+                "ET": true,
+                "IP": "192.168.20.18",
+                "SSH": true
+            },
+            "VL2": {
+                "Ports": [
+                    22,
+                    8080
+                ],
+                "Policies": "Video",
+                "ET": false,
+                "IP": "192.168.21.18",
+                "SSH": true
+            }
+        },
+        "Status": "Activo"
+    },
+    "AA:BB:CC:00:00:11": {
+        "Name": "R18",
+        "Protocolos": [
+            "BGP",
+            "OSPF",
+            "STP"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    22,
+                    8080
+                ],
+                "Policies": "Video",
+                "ET": false,
+                "IP": "192.168.20.19",
+                "SSH": false
+            },
+            "VL2": {
+                "Ports": [
+                    5000
+                ],
+                "Policies": "Management",
+                "ET": true,
+                "IP": "192.168.21.19",
+                "SSH": false
+            },
+            "VL3": {
+                "Ports": [
+                    443,
+                    8443
+                ],
+                "Policies": "Guest",
+                "ET": false,
+                "IP": "192.168.22.19",
+                "SSH": false
+            }
+        },
+        "Status": "Inactivo"
+    },
+    "AA:BB:CC:00:00:12": {
+        "Name": "R19",
+        "Protocolos": [
+            "EIGRP",
+            "STP"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    5000
+                ],
+                "Policies": "Management",
+                "ET": true,
+                "IP": "192.168.20.20",
+                "SSH": true
+            }
+        },
+        "Status": "Activo"
+    },
+    "AA:BB:CC:00:00:13": {
+        "Name": "R20",
+        "Protocolos": [
+            "OSPF",
+            "STP",
+            "VRRP"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    443,
+                    8443
+                ],
+                "Policies": "Guest",
+                "ET": false,
+                "IP": "192.168.20.21",
+                "SSH": false
+            },
+            "VL2": {
+                "Ports": [
+                    8080
+                ],
+                "Policies": "Voice",
+                "ET": true,
+                "IP": "192.168.21.21",
+                "SSH": false
+            }
+        },
+        "Status": "Inactivo"
+    },
+    "AA:BB:CC:00:00:14": {
+        "Name": "R21",
+        "Protocolos": [
+            "OSPF",
+            "STP",
+            "IEGRP"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    8080
+                ],
+                "Policies": "Voice",
+                "ET": true,
+                "IP": "192.168.20.22",
+                "SSH": true
+            },
+            "VL2": {
+                "Ports": [
+                    80,
+                    443
+                ],
+                "Policies": "Data",
+                "ET": false,
+                "IP": "192.168.21.22",
+                "SSH": true
+            },
+            "VL3": {
+                "Ports": [
+                    22,
+                    8080
+                ],
+                "Policies": "Video",
+                "ET": true,
+                "IP": "192.168.22.22",
+                "SSH": true
+            }
+        },
+        "Status": "Activo"
+    },
+    "AA:BB:CC:00:00:15": {
+        "Name": "R22",
+        "Protocolos": [
+            "RIP",
+            "STP"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    80,
+                    443
+                ],
+                "Policies": "Data",
+                "ET": false,
+                "IP": "192.168.20.23",
+                "SSH": false
+            }
+        },
+        "Status": "Inactivo"
+    },
+    "AA:BB:CC:00:00:16": {
+        "Name": "R23",
+        "Protocolos": [
+            "BGP",
+            "OSPF",
+            "STP"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    22,
+                    8080
+                ],
+                "Policies": "Video",
+                "ET": true,
+                "IP": "192.168.20.24",
+                "SSH": true
+            },
+            "VL2": {
+                "Ports": [
+                    5000
+                ],
+                "Policies": "Management",
+                "ET": false,
+                "IP": "192.168.21.24",
+                "SSH": true
+            }
+        },
+        "Status": "Activo"
+    },
+    "AA:BB:CC:00:00:17": {
+        "Name": "R24",
+        "Protocolos": [
+            "EIGRP",
+            "STP"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    5000
+                ],
+                "Policies": "Management",
+                "ET": false,
+                "IP": "192.168.20.25",
+                "SSH": false
+            },
+            "VL2": {
+                "Ports": [
+                    443,
+                    8443
+                ],
+                "Policies": "Guest",
+                "ET": true,
+                "IP": "192.168.21.25",
+                "SSH": false
+            },
+            "VL3": {
+                "Ports": [
+                    8080
+                ],
+                "Policies": "Voice",
+                "ET": false,
+                "IP": "192.168.22.25",
+                "SSH": false
+            }
+        },
+        "Status": "Inactivo"
+    },
+    "AA:BB:CC:00:00:18": {
+        "Name": "R25",
+        "Protocolos": [
+            "OSPF",
+            "STP",
+            "VRRP"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    443,
+                    8443
+                ],
+                "Policies": "Guest",
+                "ET": true,
+                "IP": "192.168.20.26",
+                "SSH": true
+            }
+        },
+        "Status": "Activo"
+    },
+    "AA:BB:CC:00:00:19": {
+        "Name": "R26",
+        "Protocolos": [
+            "OSPF",
+            "STP",
+            "IEGRP"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    8080
+                ],
+                "Policies": "Voice",
+                "ET": false,
+                "IP": "192.168.20.27",
+                "SSH": false
+            },
+            "VL2": {
+                "Ports": [
+                    80,
+                    443
+                ],
+                "Policies": "Data",
+                "ET": true,
+                "IP": "192.168.21.27",
+                "SSH": false
+            }
+        },
+        "Status": "Inactivo"
+    },
+    "AA:BB:CC:00:00:1A": {
+        "Name": "R27",
+        "Protocolos": [
+            "RIP",
+            "STP"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    80,
+                    443
+                ],
+                "Policies": "Data",
+                "ET": true,
+                "IP": "192.168.20.28",
+                "SSH": true
+            },
+            "VL2": {
+                "Ports": [
+                    22,
+                    8080
+                ],
+                "Policies": "Video",
+                "ET": false,
+                "IP": "192.168.21.28",
+                "SSH": true
+            },
+            "VL3": {
+                "Ports": [
+                    5000
+                ],
+                "Policies": "Management",
+                "ET": true,
+                "IP": "192.168.22.28",
+                "SSH": true
+            }
+        },
+        "Status": "Activo"
+    },
+    "AA:BB:CC:00:00:1B": {
+        "Name": "R28",
+        "Protocolos": [
+            "BGP",
+            "OSPF",
+            "STP"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    22,
+                    8080
+                ],
+                "Policies": "Video",
+                "ET": false,
+                "IP": "192.168.20.29",
+                "SSH": false
+            }
+        },
+        "Status": "Inactivo"
+    },
+    "AA:BB:CC:00:00:1C": {
+        "Name": "R29",
+        "Protocolos": [
+            "EIGRP",
+            "STP"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    5000
+                ],
+                "Policies": "Management",
+                "ET": true,
+                "IP": "192.168.20.30",
+                "SSH": true
+            },
+            "VL2": {
+                "Ports": [
+                    443,
+                    8443
+                ],
+                "Policies": "Guest",
+                "ET": false,
+                "IP": "192.168.21.30",
+                "SSH": true
+            }
+        },
+        "Status": "Activo"
+    },
+    "AA:BB:CC:00:00:1D": {
+        "Name": "R30",
+        "Protocolos": [
+            "OSPF",
+            "STP",
+            "VRRP"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    443,
+                    8443
+                ],
+                "Policies": "Guest",
+                "ET": false,
+                "IP": "192.168.20.31",
+                "SSH": false
+            },
+            "VL2": {
+                "Ports": [
+                    8080
+                ],
+                "Policies": "Voice",
+                "ET": true,
+                "IP": "192.168.21.31",
+                "SSH": false
+            },
+            "VL3": {
+                "Ports": [
+                    80,
+                    443
+                ],
+                "Policies": "Data",
+                "ET": false,
+                "IP": "192.168.22.31",
+                "SSH": false
+            }
+        },
+        "Status": "Inactivo"
+    },
+    "AA:BB:CC:00:00:1E": {
+        "Name": "R31",
+        "Protocolos": [
+            "OSPF",
+            "STP",
+            "IEGRP"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    8080
+                ],
+                "Policies": "Voice",
+                "ET": true,
+                "IP": "192.168.20.32",
+                "SSH": true
+            }
+        },
+        "Status": "Activo"
+    },
+    "AA:BB:CC:00:00:1F": {
+        "Name": "R32",
+        "Protocolos": [
+            "RIP",
+            "STP"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    80,
+                    443
+                ],
+                "Policies": "Data",
+                "ET": false,
+                "IP": "192.168.20.33",
+                "SSH": false
+            },
+            "VL2": {
+                "Ports": [
+                    22,
+                    8080
+                ],
+                "Policies": "Video",
+                "ET": true,
+                "IP": "192.168.21.33",
+                "SSH": false
+            }
+        },
+        "Status": "Inactivo"
+    },
+    "AA:BB:CC:00:00:20": {
+        "Name": "R33",
+        "Protocolos": [
+            "BGP",
+            "OSPF",
+            "STP"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    22,
+                    8080
+                ],
+                "Policies": "Video",
+                "ET": true,
+                "IP": "192.168.20.34",
+                "SSH": true
+            },
+            "VL2": {
+                "Ports": [
+                    5000
+                ],
+                "Policies": "Management",
+                "ET": false,
+                "IP": "192.168.21.34",
+                "SSH": true
+            },
+            "VL3": {
+                "Ports": [
+                    443,
+                    8443
+                ],
+                "Policies": "Guest",
+                "ET": true,
+                "IP": "192.168.22.34",
+                "SSH": true
+            }
+        },
+        "Status": "Activo"
+    },
+    "AA:BB:CC:00:00:21": {
+        "Name": "R34",
+        "Protocolos": [
+            "EIGRP",
+            "STP"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    5000
+                ],
+                "Policies": "Management",
+                "ET": false,
+                "IP": "192.168.20.35",
+                "SSH": false
+            }
+        },
+        "Status": "Inactivo"
+    },
+    "AA:BB:CC:00:00:22": {
+        "Name": "R35",
+        "Protocolos": [
+            "OSPF",
+            "STP",
+            "VRRP"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    443,
+                    8443
+                ],
+                "Policies": "Guest",
+                "ET": true,
+                "IP": "192.168.20.36",
+                "SSH": true
+            },
+            "VL2": {
+                "Ports": [
+                    8080
+                ],
+                "Policies": "Voice",
+                "ET": false,
+                "IP": "192.168.21.36",
+                "SSH": true
+            }
+        },
+        "Status": "Activo"
+    },
+    "AA:BB:CC:00:00:23": {
+        "Name": "R36",
+        "Protocolos": [
+            "OSPF",
+            "STP",
+            "IEGRP"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    8080
+                ],
+                "Policies": "Voice",
+                "ET": false,
+                "IP": "192.168.20.37",
+                "SSH": false
+            },
+            "VL2": {
+                "Ports": [
+                    80,
+                    443
+                ],
+                "Policies": "Data",
+                "ET": true,
+                "IP": "192.168.21.37",
+                "SSH": false
+            },
+            "VL3": {
+                "Ports": [
+                    22,
+                    8080
+                ],
+                "Policies": "Video",
+                "ET": false,
+                "IP": "192.168.22.37",
+                "SSH": false
+            }
+        },
+        "Status": "Inactivo"
+    },
+    "AA:BB:CC:00:00:24": {
+        "Name": "R37",
+        "Protocolos": [
+            "RIP",
+            "STP"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    80,
+                    443
+                ],
+                "Policies": "Data",
+                "ET": true,
+                "IP": "192.168.20.38",
+                "SSH": true
+            }
+        },
+        "Status": "Activo"
+    },
+    "AA:BB:CC:00:00:25": {
+        "Name": "R38",
+        "Protocolos": [
+            "BGP",
+            "OSPF",
+            "STP"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    22,
+                    8080
+                ],
+                "Policies": "Video",
+                "ET": false,
+                "IP": "192.168.20.39",
+                "SSH": false
+            },
+            "VL2": {
+                "Ports": [
+                    5000
+                ],
+                "Policies": "Management",
+                "ET": true,
+                "IP": "192.168.21.39",
+                "SSH": false
+            }
+        },
+        "Status": "Inactivo"
+    },
+    "AA:BB:CC:00:00:26": {
+        "Name": "R39",
+        "Protocolos": [
+            "EIGRP",
+            "STP"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    5000
+                ],
+                "Policies": "Management",
+                "ET": true,
+                "IP": "192.168.20.40",
+                "SSH": true
+            },
+            "VL2": {
+                "Ports": [
+                    443,
+                    8443
+                ],
+                "Policies": "Guest",
+                "ET": false,
+                "IP": "192.168.21.40",
+                "SSH": true
+            },
+            "VL3": {
+                "Ports": [
+                    8080
+                ],
+                "Policies": "Voice",
+                "ET": true,
+                "IP": "192.168.22.40",
+                "SSH": true
+            }
+        },
+        "Status": "Activo"
+    },
+    "AA:BB:CC:00:00:27": {
+        "Name": "R40",
+        "Protocolos": [
+            "OSPF",
+            "STP",
+            "VRRP"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    443,
+                    8443
+                ],
+                "Policies": "Guest",
+                "ET": false,
+                "IP": "192.168.20.41",
+                "SSH": false
+            }
+        },
+        "Status": "Inactivo"
+    },
+    "AA:BB:CC:00:00:28": {
+        "Name": "R41",
+        "Protocolos": [
+            "OSPF",
+            "STP",
+            "IEGRP"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    8080
+                ],
+                "Policies": "Voice",
+                "ET": true,
+                "IP": "192.168.20.42",
+                "SSH": true
+            },
+            "VL2": {
+                "Ports": [
+                    80,
+                    443
+                ],
+                "Policies": "Data",
+                "ET": false,
+                "IP": "192.168.21.42",
+                "SSH": true
+            }
+        },
+        "Status": "Activo"
+    },
+    "AA:BB:CC:00:00:29": {
+        "Name": "R42",
+        "Protocolos": [
+            "RIP",
+            "STP"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    80,
+                    443
+                ],
+                "Policies": "Data",
+                "ET": false,
+                "IP": "192.168.20.43",
+                "SSH": false
+            },
+            "VL2": {
+                "Ports": [
+                    22,
+                    8080
+                ],
+                "Policies": "Video",
+                "ET": true,
+                "IP": "192.168.21.43",
+                "SSH": false
+            },
+            "VL3": {
+                "Ports": [
+                    5000
+                ],
+                "Policies": "Management",
+                "ET": false,
+                "IP": "192.168.22.43",
+                "SSH": false
+            }
+        },
+        "Status": "Inactivo"
+    },
+    "AA:BB:CC:00:00:2A": {
+        "Name": "R43",
+        "Protocolos": [
+            "BGP",
+            "OSPF",
+            "STP"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    22,
+                    8080
+                ],
+                "Policies": "Video",
+                "ET": true,
+                "IP": "192.168.20.44",
+                "SSH": true
+            }
+        },
+        "Status": "Activo"
+    },
+    "AA:BB:CC:00:00:2B": {
+        "Name": "R44",
+        "Protocolos": [
+            "EIGRP",
+            "STP"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    5000
+                ],
+                "Policies": "Management",
+                "ET": false,
+                "IP": "192.168.20.45",
+                "SSH": false
+            },
+            "VL2": {
+                "Ports": [
+                    443,
+                    8443
+                ],
+                "Policies": "Guest",
+                "ET": true,
+                "IP": "192.168.21.45",
+                "SSH": false
+            }
+        },
+        "Status": "Inactivo"
+    },
+    "AA:BB:CC:00:00:2C": {
+        "Name": "R45",
+        "Protocolos": [
+            "OSPF",
+            "STP",
+            "VRRP"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    443,
+                    8443
+                ],
+                "Policies": "Guest",
+                "ET": true,
+                "IP": "192.168.20.46",
+                "SSH": true
+            },
+            "VL2": {
+                "Ports": [
+                    8080
+                ],
+                "Policies": "Voice",
+                "ET": false,
+                "IP": "192.168.21.46",
+                "SSH": true
+            },
+            "VL3": {
+                "Ports": [
+                    80,
+                    443
+                ],
+                "Policies": "Data",
+                "ET": true,
+                "IP": "192.168.22.46",
+                "SSH": true
+            }
+        },
+        "Status": "Activo"
+    },
+    "AA:BB:CC:00:00:2D": {
+        "Name": "R46",
+        "Protocolos": [
+            "OSPF",
+            "STP",
+            "IEGRP"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    8080
+                ],
+                "Policies": "Voice",
+                "ET": false,
+                "IP": "192.168.20.47",
+                "SSH": false
+            }
+        },
+        "Status": "Inactivo"
+    },
+    "AA:BB:CC:00:00:2E": {
+        "Name": "R47",
+        "Protocolos": [
+            "RIP",
+            "STP"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    80,
+                    443
+                ],
+                "Policies": "Data",
+                "ET": true,
+                "IP": "192.168.20.48",
+                "SSH": true
+            },
+            "VL2": {
+                "Ports": [
+                    22,
+                    8080
+                ],
+                "Policies": "Video",
+                "ET": false,
+                "IP": "192.168.21.48",
+                "SSH": true
+            }
+        },
+        "Status": "Activo"
+    },
+    "AA:BB:CC:00:00:2F": {
+        "Name": "R48",
+        "Protocolos": [
+            "BGP",
+            "OSPF",
+            "STP"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    22,
+                    8080
+                ],
+                "Policies": "Video",
+                "ET": false,
+                "IP": "192.168.20.49",
+                "SSH": false
+            },
+            "VL2": {
+                "Ports": [
+                    5000
+                ],
+                "Policies": "Management",
+                "ET": true,
+                "IP": "192.168.21.49",
+                "SSH": false
+            },
+            "VL3": {
+                "Ports": [
+                    443,
+                    8443
+                ],
+                "Policies": "Guest",
+                "ET": false,
+                "IP": "192.168.22.49",
+                "SSH": false
+            }
+        },
+        "Status": "Inactivo"
+    },
+    "AA:BB:CC:00:00:30": {
+        "Name": "R49",
+        "Protocolos": [
+            "EIGRP",
+            "STP"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    5000
+                ],
+                "Policies": "Management",
+                "ET": true,
+                "IP": "192.168.20.50",
+                "SSH": true
+            }
+        },
+        "Status": "Activo"
+    },
+    "AA:BB:CC:00:00:31": {
+        "Name": "R50",
+        "Protocolos": [
+            "OSPF",
+            "STP",
+            "VRRP"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    443,
+                    8443
+                ],
+                "Policies": "Guest",
+                "ET": false,
+                "IP": "192.168.20.51",
+                "SSH": false
+            },
+            "VL2": {
+                "Ports": [
+                    8080
+                ],
+                "Policies": "Voice",
+                "ET": true,
+                "IP": "192.168.21.51",
+                "SSH": false
+            }
+        },
+        "Status": "Inactivo"
+    },
+    "AA:BB:CC:00:00:32": {
+        "Name": "R51",
+        "Protocolos": [
+            "OSPF",
+            "STP",
+            "IEGRP"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    8080
+                ],
+                "Policies": "Voice",
+                "ET": true,
+                "IP": "192.168.20.52",
+                "SSH": true
+            },
+            "VL2": {
+                "Ports": [
+                    80,
+                    443
+                ],
+                "Policies": "Data",
+                "ET": false,
+                "IP": "192.168.21.52",
+                "SSH": true
+            },
+            "VL3": {
+                "Ports": [
+                    22,
+                    8080
+                ],
+                "Policies": "Video",
+                "ET": true,
+                "IP": "192.168.22.52",
+                "SSH": true
+            }
+        },
+        "Status": "Activo"
+    },
+    "AA:BB:CC:00:00:33": {
+        "Name": "R52",
+        "Protocolos": [
+            "RIP",
+            "STP"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    80,
+                    443
+                ],
+                "Policies": "Data",
+                "ET": false,
+                "IP": "192.168.20.53",
+                "SSH": false
+            }
+        },
+        "Status": "Inactivo"
+    },
+    "AA:BB:CC:00:00:34": {
+        "Name": "R53",
+        "Protocolos": [
+            "BGP",
+            "OSPF",
+            "STP"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    22,
+                    8080
+                ],
+                "Policies": "Video",
+                "ET": true,
+                "IP": "192.168.20.54",
+                "SSH": true
+            },
+            "VL2": {
+                "Ports": [
+                    5000
+                ],
+                "Policies": "Management",
+                "ET": false,
+                "IP": "192.168.21.54",
+                "SSH": true
+            }
+        },
+        "Status": "Activo"
+    },
+    "AA:BB:CC:00:00:35": {
+        "Name": "R54",
+        "Protocolos": [
+            "EIGRP",
+            "STP"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    5000
+                ],
+                "Policies": "Management",
+                "ET": false,
+                "IP": "192.168.20.55",
+                "SSH": false
+            },
+            "VL2": {
+                "Ports": [
+                    443,
+                    8443
+                ],
+                "Policies": "Guest",
+                "ET": true,
+                "IP": "192.168.21.55",
+                "SSH": false
+            },
+            "VL3": {
+                "Ports": [
+                    8080
+                ],
+                "Policies": "Voice",
+                "ET": false,
+                "IP": "192.168.22.55",
+                "SSH": false
+            }
+        },
+        "Status": "Inactivo"
+    },
+    "AA:BB:CC:00:00:36": {
+        "Name": "R55",
+        "Protocolos": [
+            "OSPF",
+            "STP",
+            "VRRP"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    443,
+                    8443
+                ],
+                "Policies": "Guest",
+                "ET": true,
+                "IP": "192.168.20.56",
+                "SSH": true
+            }
+        },
+        "Status": "Activo"
+    },
+    "AA:BB:CC:00:00:37": {
+        "Name": "R56",
+        "Protocolos": [
+            "OSPF",
+            "STP",
+            "IEGRP"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    8080
+                ],
+                "Policies": "Voice",
+                "ET": false,
+                "IP": "192.168.20.57",
+                "SSH": false
+            },
+            "VL2": {
+                "Ports": [
+                    80,
+                    443
+                ],
+                "Policies": "Data",
+                "ET": true,
+                "IP": "192.168.21.57",
+                "SSH": false
+            }
+        },
+        "Status": "Inactivo"
+    },
+    "AA:BB:CC:00:00:38": {
+        "Name": "R57",
+        "Protocolos": [
+            "RIP",
+            "STP"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    80,
+                    443
+                ],
+                "Policies": "Data",
+                "ET": true,
+                "IP": "192.168.20.58",
+                "SSH": true
+            },
+            "VL2": {
+                "Ports": [
+                    22,
+                    8080
+                ],
+                "Policies": "Video",
+                "ET": false,
+                "IP": "192.168.21.58",
+                "SSH": true
+            },
+            "VL3": {
+                "Ports": [
+                    5000
+                ],
+                "Policies": "Management",
+                "ET": true,
+                "IP": "192.168.22.58",
+                "SSH": true
+            }
+        },
+        "Status": "Activo"
+    },
+    "AA:BB:CC:00:00:39": {
+        "Name": "R58",
+        "Protocolos": [
+            "BGP",
+            "OSPF",
+            "STP"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    22,
+                    8080
+                ],
+                "Policies": "Video",
+                "ET": false,
+                "IP": "192.168.20.59",
+                "SSH": false
+            }
+        },
+        "Status": "Inactivo"
+    },
+    "AA:BB:CC:00:00:3A": {
+        "Name": "R59",
+        "Protocolos": [
+            "EIGRP",
+            "STP"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    5000
+                ],
+                "Policies": "Management",
+                "ET": true,
+                "IP": "192.168.20.60",
+                "SSH": true
+            },
+            "VL2": {
+                "Ports": [
+                    443,
+                    8443
+                ],
+                "Policies": "Guest",
+                "ET": false,
+                "IP": "192.168.21.60",
+                "SSH": true
+            }
+        },
+        "Status": "Activo"
+    },
+    "AA:BB:CC:00:00:3B": {
+        "Name": "R60",
+        "Protocolos": [
+            "OSPF",
+            "STP",
+            "VRRP"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    443,
+                    8443
+                ],
+                "Policies": "Guest",
+                "ET": false,
+                "IP": "192.168.20.61",
+                "SSH": false
+            },
+            "VL2": {
+                "Ports": [
+                    8080
+                ],
+                "Policies": "Voice",
+                "ET": true,
+                "IP": "192.168.21.61",
+                "SSH": false
+            },
+            "VL3": {
+                "Ports": [
+                    80,
+                    443
+                ],
+                "Policies": "Data",
+                "ET": false,
+                "IP": "192.168.22.61",
+                "SSH": false
+            }
+        },
+        "Status": "Inactivo"
+    },
+    "AA:BB:CC:00:00:3C": {
+        "Name": "R61",
+        "Protocolos": [
+            "OSPF",
+            "STP",
+            "IEGRP"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    8080
+                ],
+                "Policies": "Voice",
+                "ET": true,
+                "IP": "192.168.20.62",
+                "SSH": true
+            }
+        },
+        "Status": "Activo"
+    },
+    "AA:BB:CC:00:00:3D": {
+        "Name": "R62",
+        "Protocolos": [
+            "RIP",
+            "STP"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    80,
+                    443
+                ],
+                "Policies": "Data",
+                "ET": false,
+                "IP": "192.168.20.63",
+                "SSH": false
+            },
+            "VL2": {
+                "Ports": [
+                    22,
+                    8080
+                ],
+                "Policies": "Video",
+                "ET": true,
+                "IP": "192.168.21.63",
+                "SSH": false
+            }
+        },
+        "Status": "Inactivo"
+    },
+    "AA:BB:CC:00:00:3E": {
+        "Name": "R63",
+        "Protocolos": [
+            "BGP",
+            "OSPF",
+            "STP"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    22,
+                    8080
+                ],
+                "Policies": "Video",
+                "ET": true,
+                "IP": "192.168.20.64",
+                "SSH": true
+            },
+            "VL2": {
+                "Ports": [
+                    5000
+                ],
+                "Policies": "Management",
+                "ET": false,
+                "IP": "192.168.21.64",
+                "SSH": true
+            },
+            "VL3": {
+                "Ports": [
+                    443,
+                    8443
+                ],
+                "Policies": "Guest",
+                "ET": true,
+                "IP": "192.168.22.64",
+                "SSH": true
+            }
+        },
+        "Status": "Activo"
+    },
+    "AA:BB:CC:00:00:3F": {
+        "Name": "R64",
+        "Protocolos": [
+            "EIGRP",
+            "STP"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    5000
+                ],
+                "Policies": "Management",
+                "ET": false,
+                "IP": "192.168.20.65",
+                "SSH": false
+            }
+        },
+        "Status": "Inactivo"
+    },
+    "AA:BB:CC:00:00:40": {
+        "Name": "R65",
+        "Protocolos": [
+            "OSPF",
+            "STP",
+            "VRRP"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    443,
+                    8443
+                ],
+                "Policies": "Guest",
+                "ET": true,
+                "IP": "192.168.20.66",
+                "SSH": true
+            },
+            "VL2": {
+                "Ports": [
+                    8080
+                ],
+                "Policies": "Voice",
+                "ET": false,
+                "IP": "192.168.21.66",
+                "SSH": true
+            }
+        },
+        "Status": "Activo"
+    },
+    "AA:BB:CC:00:00:41": {
+        "Name": "R66",
+        "Protocolos": [
+            "OSPF",
+            "STP",
+            "IEGRP"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    8080
+                ],
+                "Policies": "Voice",
+                "ET": false,
+                "IP": "192.168.20.67",
+                "SSH": false
+            },
+            "VL2": {
+                "Ports": [
+                    80,
+                    443
+                ],
+                "Policies": "Data",
+                "ET": true,
+                "IP": "192.168.21.67",
+                "SSH": false
+            },
+            "VL3": {
+                "Ports": [
+                    22,
+                    8080
+                ],
+                "Policies": "Video",
+                "ET": false,
+                "IP": "192.168.22.67",
+                "SSH": false
+            }
+        },
+        "Status": "Inactivo"
+    },
+    "AA:BB:CC:00:00:42": {
+        "Name": "R67",
+        "Protocolos": [
+            "RIP",
+            "STP"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    80,
+                    443
+                ],
+                "Policies": "Data",
+                "ET": true,
+                "IP": "192.168.20.68",
+                "SSH": true
+            }
+        },
+        "Status": "Activo"
+    },
+    "AA:BB:CC:00:00:43": {
+        "Name": "R68",
+        "Protocolos": [
+            "BGP",
+            "OSPF",
+            "STP"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    22,
+                    8080
+                ],
+                "Policies": "Video",
+                "ET": false,
+                "IP": "192.168.20.69",
+                "SSH": false
+            },
+            "VL2": {
+                "Ports": [
+                    5000
+                ],
+                "Policies": "Management",
+                "ET": true,
+                "IP": "192.168.21.69",
+                "SSH": false
+            }
+        },
+        "Status": "Inactivo"
+    },
+    "AA:BB:CC:00:00:44": {
+        "Name": "R69",
+        "Protocolos": [
+            "EIGRP",
+            "STP"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    5000
+                ],
+                "Policies": "Management",
+                "ET": true,
+                "IP": "192.168.20.70",
+                "SSH": true
+            },
+            "VL2": {
+                "Ports": [
+                    443,
+                    8443
+                ],
+                "Policies": "Guest",
+                "ET": false,
+                "IP": "192.168.21.70",
+                "SSH": true
+            },
+            "VL3": {
+                "Ports": [
+                    8080
+                ],
+                "Policies": "Voice",
+                "ET": true,
+                "IP": "192.168.22.70",
+                "SSH": true
+            }
+        },
+        "Status": "Activo"
+    },
+    "AA:BB:CC:00:00:45": {
+        "Name": "R70",
+        "Protocolos": [
+            "OSPF",
+            "STP",
+            "VRRP"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    443,
+                    8443
+                ],
+                "Policies": "Guest",
+                "ET": false,
+                "IP": "192.168.20.71",
+                "SSH": false
+            }
+        },
+        "Status": "Inactivo"
+    },
+    "AA:BB:CC:00:00:46": {
+        "Name": "R71",
+        "Protocolos": [
+            "OSPF",
+            "STP",
+            "IEGRP"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    8080
+                ],
+                "Policies": "Voice",
+                "ET": true,
+                "IP": "192.168.20.72",
+                "SSH": true
+            },
+            "VL2": {
+                "Ports": [
+                    80,
+                    443
+                ],
+                "Policies": "Data",
+                "ET": false,
+                "IP": "192.168.21.72",
+                "SSH": true
+            }
+        },
+        "Status": "Activo"
+    },
+    "AA:BB:CC:00:00:47": {
+        "Name": "R72",
+        "Protocolos": [
+            "RIP",
+            "STP"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    80,
+                    443
+                ],
+                "Policies": "Data",
+                "ET": false,
+                "IP": "192.168.20.73",
+                "SSH": false
+            },
+            "VL2": {
+                "Ports": [
+                    22,
+                    8080
+                ],
+                "Policies": "Video",
+                "ET": true,
+                "IP": "192.168.21.73",
+                "SSH": false
+            },
+            "VL3": {
+                "Ports": [
+                    5000
+                ],
+                "Policies": "Management",
+                "ET": false,
+                "IP": "192.168.22.73",
+                "SSH": false
+            }
+        },
+        "Status": "Inactivo"
+    },
+    "AA:BB:CC:00:00:48": {
+        "Name": "R73",
+        "Protocolos": [
+            "BGP",
+            "OSPF",
+            "STP"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    22,
+                    8080
+                ],
+                "Policies": "Video",
+                "ET": true,
+                "IP": "192.168.20.74",
+                "SSH": true
+            }
+        },
+        "Status": "Activo"
+    },
+    "AA:BB:CC:00:00:49": {
+        "Name": "R74",
+        "Protocolos": [
+            "EIGRP",
+            "STP"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    5000
+                ],
+                "Policies": "Management",
+                "ET": false,
+                "IP": "192.168.20.75",
+                "SSH": false
+            },
+            "VL2": {
+                "Ports": [
+                    443,
+                    8443
+                ],
+                "Policies": "Guest",
+                "ET": true,
+                "IP": "192.168.21.75",
+                "SSH": false
+            }
+        },
+        "Status": "Inactivo"
+    },
+    "AA:BB:CC:00:00:4A": {
+        "Name": "R75",
+        "Protocolos": [
+            "OSPF",
+            "STP",
+            "VRRP"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    443,
+                    8443
+                ],
+                "Policies": "Guest",
+                "ET": true,
+                "IP": "192.168.20.76",
+                "SSH": true
+            },
+            "VL2": {
+                "Ports": [
+                    8080
+                ],
+                "Policies": "Voice",
+                "ET": false,
+                "IP": "192.168.21.76",
+                "SSH": true
+            },
+            "VL3": {
+                "Ports": [
+                    80,
+                    443
+                ],
+                "Policies": "Data",
+                "ET": true,
+                "IP": "192.168.22.76",
+                "SSH": true
+            }
+        },
+        "Status": "Activo"
+    },
+    "AA:BB:CC:00:00:4B": {
+        "Name": "R76",
+        "Protocolos": [
+            "OSPF",
+            "STP",
+            "IEGRP"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    8080
+                ],
+                "Policies": "Voice",
+                "ET": false,
+                "IP": "192.168.20.77",
+                "SSH": false
+            }
+        },
+        "Status": "Inactivo"
+    },
+    "AA:BB:CC:00:00:4C": {
+        "Name": "R77",
+        "Protocolos": [
+            "RIP",
+            "STP"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    80,
+                    443
+                ],
+                "Policies": "Data",
+                "ET": true,
+                "IP": "192.168.20.78",
+                "SSH": true
+            },
+            "VL2": {
+                "Ports": [
+                    22,
+                    8080
+                ],
+                "Policies": "Video",
+                "ET": false,
+                "IP": "192.168.21.78",
+                "SSH": true
+            }
+        },
+        "Status": "Activo"
+    },
+    "AA:BB:CC:00:00:4D": {
+        "Name": "R78",
+        "Protocolos": [
+            "BGP",
+            "OSPF",
+            "STP"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    22,
+                    8080
+                ],
+                "Policies": "Video",
+                "ET": false,
+                "IP": "192.168.20.79",
+                "SSH": false
+            },
+            "VL2": {
+                "Ports": [
+                    5000
+                ],
+                "Policies": "Management",
+                "ET": true,
+                "IP": "192.168.21.79",
+                "SSH": false
+            },
+            "VL3": {
+                "Ports": [
+                    443,
+                    8443
+                ],
+                "Policies": "Guest",
+                "ET": false,
+                "IP": "192.168.22.79",
+                "SSH": false
+            }
+        },
+        "Status": "Inactivo"
+    },
+    "AA:BB:CC:00:00:4E": {
+        "Name": "R79",
+        "Protocolos": [
+            "EIGRP",
+            "STP"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    5000
+                ],
+                "Policies": "Management",
+                "ET": true,
+                "IP": "192.168.20.80",
+                "SSH": true
+            }
+        },
+        "Status": "Activo"
+    },
+    "AA:BB:CC:00:00:4F": {
+        "Name": "R80",
+        "Protocolos": [
+            "OSPF",
+            "STP",
+            "VRRP"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    443,
+                    8443
+                ],
+                "Policies": "Guest",
+                "ET": false,
+                "IP": "192.168.20.81",
+                "SSH": false
+            },
+            "VL2": {
+                "Ports": [
+                    8080
+                ],
+                "Policies": "Voice",
+                "ET": true,
+                "IP": "192.168.21.81",
+                "SSH": false
+            }
+        },
+        "Status": "Inactivo"
+    },
+    "AA:BB:CC:00:00:50": {
+        "Name": "R81",
+        "Protocolos": [
+            "OSPF",
+            "STP",
+            "IEGRP"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    8080
+                ],
+                "Policies": "Voice",
+                "ET": true,
+                "IP": "192.168.20.82",
+                "SSH": true
+            },
+            "VL2": {
+                "Ports": [
+                    80,
+                    443
+                ],
+                "Policies": "Data",
+                "ET": false,
+                "IP": "192.168.21.82",
+                "SSH": true
+            },
+            "VL3": {
+                "Ports": [
+                    22,
+                    8080
+                ],
+                "Policies": "Video",
+                "ET": true,
+                "IP": "192.168.22.82",
+                "SSH": true
+            }
+        },
+        "Status": "Activo"
+    },
+    "AA:BB:CC:00:00:51": {
+        "Name": "R82",
+        "Protocolos": [
+            "RIP",
+            "STP"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    80,
+                    443
+                ],
+                "Policies": "Data",
+                "ET": false,
+                "IP": "192.168.20.83",
+                "SSH": false
+            }
+        },
+        "Status": "Inactivo"
+    },
+    "AA:BB:CC:00:00:52": {
+        "Name": "R83",
+        "Protocolos": [
+            "BGP",
+            "OSPF",
+            "STP"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    22,
+                    8080
+                ],
+                "Policies": "Video",
+                "ET": true,
+                "IP": "192.168.20.84",
+                "SSH": true
+            },
+            "VL2": {
+                "Ports": [
+                    5000
+                ],
+                "Policies": "Management",
+                "ET": false,
+                "IP": "192.168.21.84",
+                "SSH": true
+            }
+        },
+        "Status": "Activo"
+    },
+    "AA:BB:CC:00:00:53": {
+        "Name": "R84",
+        "Protocolos": [
+            "EIGRP",
+            "STP"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    5000
+                ],
+                "Policies": "Management",
+                "ET": false,
+                "IP": "192.168.20.85",
+                "SSH": false
+            },
+            "VL2": {
+                "Ports": [
+                    443,
+                    8443
+                ],
+                "Policies": "Guest",
+                "ET": true,
+                "IP": "192.168.21.85",
+                "SSH": false
+            },
+            "VL3": {
+                "Ports": [
+                    8080
+                ],
+                "Policies": "Voice",
+                "ET": false,
+                "IP": "192.168.22.85",
+                "SSH": false
+            }
+        },
+        "Status": "Inactivo"
+    },
+    "AA:BB:CC:00:00:54": {
+        "Name": "R85",
+        "Protocolos": [
+            "OSPF",
+            "STP",
+            "VRRP"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    443,
+                    8443
+                ],
+                "Policies": "Guest",
+                "ET": true,
+                "IP": "192.168.20.86",
+                "SSH": true
+            }
+        },
+        "Status": "Activo"
+    },
+    "AA:BB:CC:00:00:55": {
+        "Name": "R86",
+        "Protocolos": [
+            "OSPF",
+            "STP",
+            "IEGRP"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    8080
+                ],
+                "Policies": "Voice",
+                "ET": false,
+                "IP": "192.168.20.87",
+                "SSH": false
+            },
+            "VL2": {
+                "Ports": [
+                    80,
+                    443
+                ],
+                "Policies": "Data",
+                "ET": true,
+                "IP": "192.168.21.87",
+                "SSH": false
+            }
+        },
+        "Status": "Inactivo"
+    },
+    "AA:BB:CC:00:00:56": {
+        "Name": "R87",
+        "Protocolos": [
+            "RIP",
+            "STP"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    80,
+                    443
+                ],
+                "Policies": "Data",
+                "ET": true,
+                "IP": "192.168.20.88",
+                "SSH": true
+            },
+            "VL2": {
+                "Ports": [
+                    22,
+                    8080
+                ],
+                "Policies": "Video",
+                "ET": false,
+                "IP": "192.168.21.88",
+                "SSH": true
+            },
+            "VL3": {
+                "Ports": [
+                    5000
+                ],
+                "Policies": "Management",
+                "ET": true,
+                "IP": "192.168.22.88",
+                "SSH": true
+            }
+        },
+        "Status": "Activo"
+    },
+    "AA:BB:CC:00:00:57": {
+        "Name": "R88",
+        "Protocolos": [
+            "BGP",
+            "OSPF",
+            "STP"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    22,
+                    8080
+                ],
+                "Policies": "Video",
+                "ET": false,
+                "IP": "192.168.20.89",
+                "SSH": false
+            }
+        },
+        "Status": "Inactivo"
+    },
+    "AA:BB:CC:00:00:58": {
+        "Name": "R89",
+        "Protocolos": [
+            "EIGRP",
+            "STP"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    5000
+                ],
+                "Policies": "Management",
+                "ET": true,
+                "IP": "192.168.20.90",
+                "SSH": true
+            },
+            "VL2": {
+                "Ports": [
+                    443,
+                    8443
+                ],
+                "Policies": "Guest",
+                "ET": false,
+                "IP": "192.168.21.90",
+                "SSH": true
+            }
+        },
+        "Status": "Activo"
+    },
+    "AA:BB:CC:00:00:59": {
+        "Name": "R90",
+        "Protocolos": [
+            "OSPF",
+            "STP",
+            "VRRP"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    443,
+                    8443
+                ],
+                "Policies": "Guest",
+                "ET": false,
+                "IP": "192.168.20.91",
+                "SSH": false
+            },
+            "VL2": {
+                "Ports": [
+                    8080
+                ],
+                "Policies": "Voice",
+                "ET": true,
+                "IP": "192.168.21.91",
+                "SSH": false
+            },
+            "VL3": {
+                "Ports": [
+                    80,
+                    443
+                ],
+                "Policies": "Data",
+                "ET": false,
+                "IP": "192.168.22.91",
+                "SSH": false
+            }
+        },
+        "Status": "Inactivo"
+    },
+    "AA:BB:CC:00:00:5A": {
+        "Name": "R91",
+        "Protocolos": [
+            "OSPF",
+            "STP",
+            "IEGRP"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    8080
+                ],
+                "Policies": "Voice",
+                "ET": true,
+                "IP": "192.168.20.92",
+                "SSH": true
+            }
+        },
+        "Status": "Activo"
+    },
+    "AA:BB:CC:00:00:5B": {
+        "Name": "R92",
+        "Protocolos": [
+            "RIP",
+            "STP"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    80,
+                    443
+                ],
+                "Policies": "Data",
+                "ET": false,
+                "IP": "192.168.20.93",
+                "SSH": false
+            },
+            "VL2": {
+                "Ports": [
+                    22,
+                    8080
+                ],
+                "Policies": "Video",
+                "ET": true,
+                "IP": "192.168.21.93",
+                "SSH": false
+            }
+        },
+        "Status": "Inactivo"
+    },
+    "AA:BB:CC:00:00:5C": {
+        "Name": "R93",
+        "Protocolos": [
+            "BGP",
+            "OSPF",
+            "STP"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    22,
+                    8080
+                ],
+                "Policies": "Video",
+                "ET": true,
+                "IP": "192.168.20.94",
+                "SSH": true
+            },
+            "VL2": {
+                "Ports": [
+                    5000
+                ],
+                "Policies": "Management",
+                "ET": false,
+                "IP": "192.168.21.94",
+                "SSH": true
+            },
+            "VL3": {
+                "Ports": [
+                    443,
+                    8443
+                ],
+                "Policies": "Guest",
+                "ET": true,
+                "IP": "192.168.22.94",
+                "SSH": true
+            }
+        },
+        "Status": "Activo"
+    },
+    "AA:BB:CC:00:00:5D": {
+        "Name": "R94",
+        "Protocolos": [
+            "EIGRP",
+            "STP"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    5000
+                ],
+                "Policies": "Management",
+                "ET": false,
+                "IP": "192.168.20.95",
+                "SSH": false
+            }
+        },
+        "Status": "Inactivo"
+    },
+    "AA:BB:CC:00:00:5E": {
+        "Name": "R95",
+        "Protocolos": [
+            "OSPF",
+            "STP",
+            "VRRP"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    443,
+                    8443
+                ],
+                "Policies": "Guest",
+                "ET": true,
+                "IP": "192.168.20.96",
+                "SSH": true
+            },
+            "VL2": {
+                "Ports": [
+                    8080
+                ],
+                "Policies": "Voice",
+                "ET": false,
+                "IP": "192.168.21.96",
+                "SSH": true
+            }
+        },
+        "Status": "Activo"
+    },
+    "AA:BB:CC:00:00:5F": {
+        "Name": "R96",
+        "Protocolos": [
+            "OSPF",
+            "STP",
+            "IEGRP"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    8080
+                ],
+                "Policies": "Voice",
+                "ET": false,
+                "IP": "192.168.20.97",
+                "SSH": false
+            },
+            "VL2": {
+                "Ports": [
+                    80,
+                    443
+                ],
+                "Policies": "Data",
+                "ET": true,
+                "IP": "192.168.21.97",
+                "SSH": false
+            },
+            "VL3": {
+                "Ports": [
+                    22,
+                    8080
+                ],
+                "Policies": "Video",
+                "ET": false,
+                "IP": "192.168.22.97",
+                "SSH": false
+            }
+        },
+        "Status": "Inactivo"
+    },
+    "AA:BB:CC:00:00:60": {
+        "Name": "R97",
+        "Protocolos": [
+            "RIP",
+            "STP"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    80,
+                    443
+                ],
+                "Policies": "Data",
+                "ET": true,
+                "IP": "192.168.20.98",
+                "SSH": true
+            }
+        },
+        "Status": "Activo"
+    },
+    "AA:BB:CC:00:00:61": {
+        "Name": "R98",
+        "Protocolos": [
+            "BGP",
+            "OSPF",
+            "STP"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    22,
+                    8080
+                ],
+                "Policies": "Video",
+                "ET": false,
+                "IP": "192.168.20.99",
+                "SSH": false
+            },
+            "VL2": {
+                "Ports": [
+                    5000
+                ],
+                "Policies": "Management",
+                "ET": true,
+                "IP": "192.168.21.99",
+                "SSH": false
+            }
+        },
+        "Status": "Inactivo"
+    },
+    "AA:BB:CC:00:00:62": {
+        "Name": "R99",
+        "Protocolos": [
+            "EIGRP",
+            "STP"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    5000
+                ],
+                "Policies": "Management",
+                "ET": true,
+                "IP": "192.168.20.100",
+                "SSH": true
+            },
+            "VL2": {
+                "Ports": [
+                    443,
+                    8443
+                ],
+                "Policies": "Guest",
+                "ET": false,
+                "IP": "192.168.21.100",
+                "SSH": true
+            },
+            "VL3": {
+                "Ports": [
+                    8080
+                ],
+                "Policies": "Voice",
+                "ET": true,
+                "IP": "192.168.22.100",
+                "SSH": true
+            }
+        },
+        "Status": "Activo"
+    },
+    "AA:BB:CC:00:00:63": {
+        "Name": "R100",
+        "Protocolos": [
+            "OSPF",
+            "STP",
+            "VRRP"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    443,
+                    8443
+                ],
+                "Policies": "Guest",
+                "ET": false,
+                "IP": "192.168.20.101",
+                "SSH": false
+            }
+        },
+        "Status": "Inactivo"
+    },
+    "AA:BB:CC:00:00:64": {
+        "Name": "R101",
+        "Protocolos": [
+            "OSPF",
+            "STP",
+            "IEGRP"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [
+                    8080
+                ],
+                "Policies": "Voice",
+                "ET": true,
+                "IP": "192.168.20.102",
+                "SSH": true
+            },
+            "VL2": {
+                "Ports": [
+                    80,
+                    443
+                ],
+                "Policies": "Data",
+                "ET": false,
+                "IP": "192.168.21.102",
+                "SSH": true
+            }
+        },
+        "Status": "Activo"
+    }
+}
